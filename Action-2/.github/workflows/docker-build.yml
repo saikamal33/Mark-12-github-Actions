@@ -1,0 +1,11 @@
+name: Build and push Docker Images
+
+# This action will be triggered when the commits are pushed to main branch 
+on:
+  push:
+    branches: [ main ]
+
+# To run the steps in order of the details 
+jobs:
+  build:
+    runs-on: ubuntu-latest
